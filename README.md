@@ -1,23 +1,29 @@
-# Investment Portfolio Dashboard
+# Investment Dashboard
 
-A modern web application for managing investment portfolios, built with React and TypeScript.
+A modern web application for investment portfolio management, built with React and TypeScript.
 
 ## Features
 
 - Secure authentication system
-- Real-time portfolio overview
-- Investment metrics visualization
-- Transaction history
+- Stylish and modern interface
 - Responsive design
+- Glassmorphism effects
+- Optimized performance
 
 ## Tech Stack
 
+### Frontend
 - React 18
 - TypeScript
 - Vite
-- Axios for API calls
-- Modern CSS with custom properties
-- Responsive design with mobile-first approach
+- CSS with variables
+- Responsive design
+
+### Backend
+- Node.js
+- Express
+- TypeScript
+- WebSocket for real-time updates
 
 ## Getting Started
 
@@ -25,54 +31,70 @@ A modern web application for managing investment portfolios, built with React an
 
 - Node.js 16+ and npm
 
-### Installation
+### Installation and Setup
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/Ret1111/treemTest.git
+cd treemTest
 ```
 
 2. Install dependencies:
+
+For frontend:
 ```bash
-cd investment-dashboard
+cd frontend
 npm install
 ```
 
-3. Start the development server:
+For backend:
+```bash
+cd backend
+npm install
+```
+
+3. Start the application:
+
+Start backend (from backend folder):
 ```bash
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173`
-
-### Building for Production
-
-To create a production build:
-
+Start frontend (from frontend folder):
 ```bash
-npm run build
+npm run dev
 ```
+
+Frontend will be available at `http://localhost:5173`
+Backend API runs on `http://localhost:5001`
 
 ## Project Structure
 
 ```
-src/
-  ├── components/     # Reusable components
-  ├── pages/         # Page components
-  ├── assets/        # Static assets
-  ├── App.tsx        # Main application component
-  ├── main.tsx       # Application entry point
-  └── App.css        # Global styles
+frontend/
+  ├── src/
+  │   ├── components/     # Reusable components
+  │   ├── pages/         # Application pages
+  │   ├── assets/        # Static assets
+  │   ├── App.tsx        # Main component
+  │   └── main.tsx       # Entry point
+  └── public/            # Public files
+
+backend/
+  ├── src/
+  │   └── index.ts       # Server entry point
+  └── tsconfig.json      # TypeScript configuration
 ```
 
-## API Integration
+## Development
 
-The application connects to a backend API running on `http://localhost:5001`. Make sure the backend server is running before starting the application.
+### Frontend
+- Uses Vite for fast development
+- TypeScript for type safety
+- Modern CSS solutions
+- Component-based approach
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request 
+### Backend
+- Express for API
+- TypeScript for code reliability
+- Structured architecture 
