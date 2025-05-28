@@ -22,7 +22,7 @@ type SortField = 'roi_percent' | 'next_distribution_date';
 type SortDirection = 'asc' | 'desc';
 
 const INVESTOR_ID = 'a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11';
-const API_BASE_URL = 'http://localhost:5001';
+const API_BASE_URL = 'https://treemtest.onrender.com';
 
 const Dashboard = () => {
   const [summary, setSummary] = useState<InvestorSummary | null>(null);
